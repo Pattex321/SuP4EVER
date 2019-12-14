@@ -1,36 +1,63 @@
+@font-face {
+  font-family: "DancingScript";
+  src: url("font/DancingScript.woff2") format("woff2");
+  }
+
+body {
+  height: 100%;
+  background-image: url('img/ice.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  height: 100%;
+}
+
+#v-center {
+  height: 240px;
+  margin-top: -100px;
+}
+
 #wrapperposition{
   position: relative;
   margin: 0 auto;
-  width: 100px;
+  width: 180px;
 }
 
 #wrapperheart {
 	position: absolute;
   margin-left: 0;
-  margin-top: 100px;
-	animation:pulse 1s infinite;
+  margin-top: 50px;
+	animation:pulse 1.5s infinite;
 }
 
 #names {
+  font-family: 'DancingScript';
   width: fit-content;
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 5em;
 }
 
 #pulsingheart { 
   position: relative; 
-  width: 100px; 
+  width: 180px; 
   height: 90px;
-  filter: drop-shadow(0 50px 40px rgb(0, 0, 0));
+  filter: drop-shadow(0 36px 44px rgb(0, 0, 0));
 } 
 
 #pulsingheart:before, #pulsingheart:after { 
   position: absolute; 
   content: ""; 
-  left: 50px; 
+  left: 90px; 
   top: 0; 
-  width: 50px; 
-  height: 80px; 
+  width: 90px; 
+  height: 140px; 
   background: #aa0000; 
   border-radius: 50px 50px 0 0; 
   transform: rotate(-45deg);  
